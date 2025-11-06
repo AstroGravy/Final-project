@@ -1,0 +1,48 @@
+.horiz-nav {
+        background-color: var(--mural-2);
+        }
+        .horiz-nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }
+        .horiz-nav li {
+        margin-right: 25px;
+        }
+        .horiz-nav a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        display: block;
+        background-color: var(--mural-2);
+        }
+        /* Hover effect */
+        .horiz-nav a:hover {
+        background-color: var(--mural-3);
+        }
+        /* Active (current page) link */
+        .horiz-nav a.active {
+        background-color: var(--mural-4);  /* a green highlight */
+        font-weight: bold;          /* make it stand out */
+        }
+        .horiz-nav a.active:hover {
+            color: black;
+        }
+        .horiz-nav a.active:hover ~ a {
+            color: black;
+        }
+        .horiz-nav .active:hover + .hide { /*this shows hide*/
+            visibility: visible;
+            
+        }
+        .hide {/* this is hidden*/
+            visibility: hidden;
+            position: absolute;
+            display: block;
+            top: 0;
+            transform: translate(0, 54px);
+        }
+        .hide:hover { /*keeps hide visible when you hover over it*/
+            visibility: visible;
+        }
