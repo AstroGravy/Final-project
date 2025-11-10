@@ -14,7 +14,7 @@ p, a {
 }
 .paragraph-1 p {
     font-size: 18px;
-    width: 180px;
+    width: 400px;
     padding: 30px;
     padding-left: 180px;
     margin: 0;
@@ -35,8 +35,11 @@ footer {
 }
 .horiz-nav {
         background-color: var(--1);
-        
+        display: flex;
         width: 100%;
+        align-items: center; /* vertically align logo + links */
+        justify-content: space-between; /* space between logo and nav links */
+        padding: 0 20px;
         }
         .horiz-nav ul {
         list-style-type: none;
@@ -57,7 +60,7 @@ footer {
         }
         /* Hover effect */
         .horiz-nav a:hover {
-        background-color: var(--3);
+        /*background-color: var(--3);*/
         }
         /* Active (current page) link */
         .horiz-nav a.active {
@@ -65,23 +68,5 @@ footer {
         font-weight: bold;          /* make it stand out */
         }
         .horiz-nav a.active:hover {
-            color: black;
+            /*color: black;*/
         }
-        .horiz-nav a.active:hover ~ a {
-            color: black;
-        }
-        .horiz-nav .active:hover + .hide { /*this shows hide*/
-            visibility: visible;
-        
-        }
-        .hide {/* this is hidden*/
-            visibility: hidden;
-            position: absolute;
-            display: block;
-            top: 0;
-            transform: translate(0, 54px);
-        }
-        .hide:hover { /*keeps hide visible when you hover over it*/
-            visibility: visible;
-        }
-        
