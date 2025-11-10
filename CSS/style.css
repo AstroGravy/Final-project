@@ -1,11 +1,50 @@
+:root {
+    --1: #000000;
+    --2: #662200;
+    --3: #778DA9;
+    --4: #E0E1DD;
+    --5: #CE2D4F;
+}
+p, a {
+    font-family: "rubik";
+}
+.paragraph-1 {
+    background-color: #F18070;
+    margin: 0;
+}
+.paragraph-1 p {
+    font-size: 18px;
+    width: 180px;
+    padding: 30px;
+    padding-left: 180px;
+    margin: 0;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #B0A098;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    margin-top: 0px;
+}
 .horiz-nav {
-        background-color: var(--mural-2);
+        background-color: var(--1);
+        
+        width: 100%;
         }
         .horiz-nav ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         display: flex;
+        justify-content: center;
+        align-items: center;
         }
         .horiz-nav li {
         margin-right: 25px;
@@ -15,15 +54,14 @@
         text-decoration: none;
         padding: 14px 20px;
         display: block;
-        background-color: var(--mural-2);
         }
         /* Hover effect */
         .horiz-nav a:hover {
-        background-color: var(--mural-3);
+        background-color: var(--3);
         }
         /* Active (current page) link */
         .horiz-nav a.active {
-        background-color: var(--mural-4);  /* a green highlight */
+        /*background-color: var(--4);  /* a green highlight */
         font-weight: bold;          /* make it stand out */
         }
         .horiz-nav a.active:hover {
@@ -34,7 +72,7 @@
         }
         .horiz-nav .active:hover + .hide { /*this shows hide*/
             visibility: visible;
-            
+        
         }
         .hide {/* this is hidden*/
             visibility: hidden;
@@ -46,3 +84,4 @@
         .hide:hover { /*keeps hide visible when you hover over it*/
             visibility: visible;
         }
+        
