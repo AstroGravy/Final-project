@@ -4,17 +4,28 @@
     --3: #778DA9;
     --4: #E0E1DD;
     --5: #CE2D4F;
+    /*new color scheme*/
+    --eggshell: #f4f1deff;
+    --burnt-peach: #e07a5fff;
+    --twilight-indigo: #3d405bff;
+    --muted-teal: #81b29aff;
+    --apricot-cream: #f2cc8fff;
 }
 p, a {
     font-family: "rubik";
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
 }
 .font-main {
     font-family: "rubik";
-    letter-spacing: 2px;
+    letter-spacing: 0.1em;
 }
-.paragraph-1 {
-    background-color: #F18070;
+.img-full-width {
+    width: 100vw; /* Sets the width to 100% of the viewport width - what vw means */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes extra space below the image */
+}
+.paragraph-1 { /*placeholder*/
+    background-color: none;
     /*margin: 0;*/
 }
 .paragraph-1 p {

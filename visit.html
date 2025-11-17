@@ -13,31 +13,76 @@
     <link rel="stylesheet" href="CSS/style.css">
 
     <style>
+        /*color palette*/
+        :root {
+            --eggshell: #f4f1deff;
+            --burnt-peach: #e07a5fff;
+            --twilight-indigo: #3d405bff;
+            --muted-teal: #81b29aff;
+            --apricot-cream: #f2cc8fff;
+        }
         .g-container-v {
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: 125px 250px auto;
             /*grid-auto-rows: auto;*/
-            grid-gap: 25px;
+            grid-gap: 10px;
             padding: 10px;
-            background-color: white;
-            row-gap: 75px;
+            background-color: var(--eggshell);
+            border: 5px solid var(--muted-teal);
+            border-radius: 5px;
         }
         .g-item-v {
-            background-color: #606060;
+            background-color: var(--muted-teal);
             padding: 20px;
-            border-bottom: 5px solid #EB5533;
-            border-top: 2px solid #ACB7D5;
-            color: #ACB7D5;
-            
+            color: var(--twilight-indigo);
+            place-content: center center;
+            border-radius: 5px;
         }
-        .g-item-v img {
-            height: 200px;
+        .g-top {
+            grid-row: 1;
+            grid-column: 1 / span 3;
+            font-weight: 900;
+            text-align: center;
+            font-size: 1.5em;
+            background-color: var(--burnt-peach);
+            color: var(--eggshell);
         }
-        .g-item-v p {
-            position: relative;
-            text-align: right;
-            font-size: 15px;
-            top: 17.5%;
+        .g-title {
+            grid-column: 1;
+            font-weight: 900;
+            text-align: center;
+            color: var(--apricot-cream);
+            background-color: var(--twilight-indigo);
+        }
+        .g-description {
+            grid-column: 3 / 4;
+            grid-row: 2 / 5;
+            background-color: var(--apricot-cream);
+        }
+
+        .hours-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 5px;
+        }
+        .hours-item {
+            background-color: var(--muted-teal);
+            padding: 5px;
+            color: var(--twilight-indigo);
+            place-content: center center;
+            border-radius: 5px;
+            font-size: 60%;
+        }
+        .hours-day {
+            grid-row: 1;
+            font-weight: 900;
+            text-align: center;
+            color: var(--apricot-cream);
+            background-color: var(--twilight-indigo);
+        }
+        .hours-description {
+            grid-row: 2;
+            background-color: var(--apricot-cream);
         }
     </style>
 </head>
@@ -56,16 +101,27 @@
     
     <div class="container">
         <h1 class="font-main">VISIT</h1>
-        <p>Our Lincoln Square Location</p>
-        <p>Our flagship store is located in the heart of Downtown Bellevue, across from Bellevue Square in Lincoln Square South. Designed as an open concept bar, we are located in the heart of downtown Bellevue, on 2nd floor of LSS across from the W hotel and Nordstrom Rack. Free parking is available in the parking garage. Our menu includes classic espresso drinks, everyday and seasonal ganache drinks.</p>
-        <p>Address</p>
-        <p><a>Lincoln Square South | 500 Bellevue Way NE, Bellevue WA 98004</a></p>
-        <p>Phone</p>
-        <p><a>425.429.3292</a></p>
-        <p>Store Hours</p>
-        <p>maybe css grid</p>
+        <div class="font-main g-container-v">
+            <div class="g-item-v g-top">Our Lincoln Square Location</div>
+            <div class="g-item-v g-description">Our flagship store is located in the heart of Downtown Bellevue, across from Bellevue Square in Lincoln Square South. Designed as an open concept bar, we are located in the heart of downtown Bellevue, on 2nd floor of LSS across from the W hotel and Nordstrom Rack. Free parking is available in the parking garage. Our menu includes classic espresso drinks, everyday and seasonal ganache drinks.</div>
+            <div class="g-item-v g-title">Address</div>
+            <div class="g-item-v"><a href="https://maps.app.goo.gl/tQkze1q4LmiWw9Wu9">Lincoln Square South | 500 Bellevue Way NE, Bellevue WA 98004</a></div>
+            <div class="g-item-v g-title">Phone</div>
+            <div class="g-item-v"><a href="tel:4254293292">425.429.3292</a></div>
+            <div class="g-item-v g-title">Store Hours</div>
+            <div class="g-item-v">
+                <div class="hours-container">
+                    <div class="hours-item hours-day">Mon-Fri</div>
+                    <div class="hours-item hours-day">Sat</div>
+                    <div class="hours-item hours-day">Sun</div>
+                    <div class="hours-item hours-description">7am-9pm</div>
+                    <div class="hours-item hours-description">8am-9pm</div>
+                    <div class="hours-item hours-description">8am-7pm</div>
+                </div>
+            </div>
+        </div>
 
-        <p>Our Spring District Location</p>
+            <p>Our Spring District Location</p>
 
 
 
