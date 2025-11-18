@@ -20,18 +20,62 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="shop.html">Shop</a></li>
             <li><a href="visit.html">Visit</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
         </ul>
     </nav>
 
-    <img src="images/building-1.jpg">
-    <img src="images/building-2.jpg">
-    <img src="images/building-3-menu.jpg">
-    <img src="images/building-4-food.jpg">
+    <h1 class="font-main">Image Gallery</h1>
 
+    <form action="">
+        <input type="checkbox" name="trivia" id = "ans1">
+        <label for="ans1">Building</label><br> <!-- this is a line break (br)-->
+        <input type="checkbox" name="trivia" id = "ans2">
+        <label for="ans2">Drinks</label><br>
+        <input type="checkbox" name="trivia" id = "ans3">
+        <label for="ans3">Food</label><br>
+        <input type="checkbox" name="trivia" id = "ans4">
+        <label for="ans4">Menus</label><br>
+        <input type="checkbox" name="trivia" id = "ans5">
+        <label for="ans5">All</label><br>
+    </form>
+    <input type="button" value="Sort Images" onclick="sortImages()">
+
+
+    <style>
+        .img-gallery-container img {
+            width: 300px;
+        }
+    </style>
+    <div class="img-gallery-container">
+        <img style="visibility: visible;" class="building" src="images/building-1.jpg">
+        <img class="building" src="images/building-2.jpg">
+        <img class="building menu" src="images/building-3-menu.jpg">
+        <img class="building food" src="images/building-4-food.jpg">
+        <img class="drink" src="images/drink-1.jpg">
+        <img class="drink" src="images/drink-2.jpg">
+        <img class="drink" src="images/drink-3.jpg">
+        <img class="food" src="images/food-1-macaroons.jpg">
+        <img class="food" src="images/food-2.jpg">
+        <img class="food" src="images/food-3-truffles.jpg">
+        <img class="food" src="images/food-4-bakery.jpg">
+        <img class="food" src="images/food-5.jpg">
+        <img class="menu" src="images/menu-1.jpg">
+        <img class="menu" src="images/menu-2.jpg">
+    </div>
+
+    <footer>
+        <div style="margin: 20px; margin-top: auto;">
+            STAY IN TOUCH
+            <a href="https://www.instagram.com/dotecoffeebar/"><img class="logo-hover" src="images/instagram-white-logo.png" width="16px"></a>
+            <a href="mailto:info@dailydote.com"><img src="images/Mail_image.svg" class="logo-hover-2"></a>
+        </div>
+        <div style="margin: 20px;">
+            © 2025 DOTE Coffee Bar
+        </div>
+    </footer>
     
-
     <script src="JS/script.js"></script>
 </body>
 </html>

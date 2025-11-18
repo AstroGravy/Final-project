@@ -40,21 +40,24 @@ p, a {
 /* css grid stuff */
 .grid-container {
     display: grid;
-    gap: 10px;
-    grid-template-columns: auto auto auto; /* auto auto auto is 3 columns */
-    padding: 10px;
-    background-color: var(--apricot-cream);
+    column-gap: 10px;
+    row-gap: 0;
+    grid-template-columns: 550px auto; /* auto auto auto is 3 columns */
+    padding: 0px;
+    background-color: var(--eggshell);
 }
 
 .grid-item {
     text-align: left;
     font-size: 16px;
-    padding: 10px;
+    padding: 0px;
     background-color: var(--apricot-cream);
 }
 .main-content {
     grid-row: 1 / span 2;
     grid-column: 1;
+    padding: 20px;
+    padding-top: 40px;
 }
 .image-content-upper {
     grid-row: 1;
@@ -66,14 +69,20 @@ p, a {
 }
 .image-content-large {
     grid-row: 1 / span 2;
-    grid-column: 3;
+    grid-column: 2;
 }
 
 .logo-hover {
-    filter: invert(100%) sepia(0%) hue-rotate(280deg) saturate(200%) brightness(50%);
+    filter: none;
 }
 .logo-hover:hover {
-    filter: invert(100%) sepia(100%) saturate(10000%) hue-rotate(250deg) brightness(50%);
+    filter: sepia(1) saturate(10000%) hue-rotate(100deg) brightness(100%);
+}
+.logo-hover-2 {
+    filter: grayscale(1);
+}
+.logo-hover-2:hover {
+    filter: grayscale(0) saturate(10000%) hue-rotate(0deg) brightness(100%);
 }
 
 body {
@@ -116,19 +125,8 @@ footer {
     padding: 14px 20px;
     display: block;
     }
-    /* Hover effect */
-    .horiz-nav a:hover {
-    /*background-color: var(--3);*/
-    }
-    /* Active (current page) link */
-    .horiz-nav a.active {
-    /*background-color: var(--4);  /* a green highlight */
-    font-weight: bold;          /* make it stand out */
-    }
-    .horiz-nav a.active:hover {
-        /*color: black;*/
-    }
 
 /* challenge:
 First, I challenged myself to learn how to change the color of an image using CSS, as shown in the images in the home page that change color when hovered on.
-Second, I put a CSS grid inside a CSS grid, and while this wasn't too challenging, I also used CSS grid with Bootstrap at the same time (and also my own classes and CSS styles).
+Second, I put a CSS grid inside a CSS grid, and while this wasn't too challenging, I also used CSS grid with Bootstrap at the same time (and also my own classes and CSS styles). This issue came up a lot, the clashing of bootstrap and my own CSS code.
+Third, I learned how to make for loops in JS in my image gallery page.
