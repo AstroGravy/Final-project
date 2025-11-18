@@ -23,10 +23,12 @@
         }
         .g-container-v {
             display: grid;
-            grid-template-columns: 125px 250px auto;
+            grid-template-columns: 125px 300px auto;
             /*grid-auto-rows: auto;*/
             grid-gap: 10px;
             padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             background-color: var(--eggshell);
             border: 5px solid var(--muted-teal);
             border-radius: 5px;
@@ -51,13 +53,14 @@
             grid-column: 1;
             font-weight: 900;
             text-align: center;
-            color: var(--apricot-cream);
+            color: var(--eggshell);
             background-color: var(--twilight-indigo);
         }
         .g-description {
             grid-column: 3 / 4;
             grid-row: 2 / 5;
             background-color: var(--apricot-cream);
+            font-size: 125%;
         }
 
         .hours-container {
@@ -67,16 +70,16 @@
         }
         .hours-item {
             background-color: var(--muted-teal);
-            padding: 5px;
+            padding: 2.5px;
             color: var(--twilight-indigo);
             place-content: center center;
             border-radius: 5px;
-            font-size: 60%;
+            font-size: 87.5%;
+            text-align: center;
         }
         .hours-day {
             grid-row: 1;
             font-weight: 900;
-            text-align: center;
             color: var(--apricot-cream);
             background-color: var(--twilight-indigo);
         }
@@ -121,7 +124,65 @@
             </div>
         </div>
 
-            <p>Our Spring District Location</p>
+        <div class="font-main g-container-v">
+            <div class="g-item-v g-top">Our Spring District Location</div>
+            <div class="g-item-v g-description">Located in the NW corner of the Meta HQ at Spring District. Free street parking and limited garage parking available.</div>
+            <div class="g-item-v g-title">Address</div>
+            <div class="g-item-v"><a href="https://maps.app.goo.gl/A8Z7iDcTwZsNrrsL6">12125 NE Spring Blvd, Bellevue WA 98005</a></div>
+            <div class="g-item-v g-title">Phone</div>
+            <div class="g-item-v"><a href="tel:4254293292">425.429.3292</a></div>
+            <div class="g-item-v g-title">Store Hours</div>
+            <div class="g-item-v">
+                <div class="hours-container">
+                    <div class="hours-item hours-day">Mon-Fri</div>
+                    <div class="hours-item hours-day">Sat</div>
+                    <div class="hours-item hours-day">Sun</div>
+                    <div class="hours-item hours-description">7am-5pm</div>
+                    <div class="hours-item hours-description">8am-5pm</div>
+                    <div class="hours-item hours-description">8am-4pm</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="font-main g-container-v">
+            <div class="g-item-v g-top">Our Redmond Technology Station Location</div>
+            <div class="g-item-v g-description">Located at Sound Transit Station adjacent to Microsoft HQ. Parking available in surface garage.</div>
+            <div class="g-item-v g-title">Address</div>
+            <div class="g-item-v"><a href="https://maps.app.goo.gl/eDug6rangicTXZ636">3849 156th Ave NE, Redmond WA 98052</a></div>
+            <div class="g-item-v g-title">Phone</div>
+            <div class="g-item-v"><a href="tel:4254293292">425.429.3292</a></div>
+            <div class="g-item-v g-title">Store Hours</div>
+            <div class="g-item-v">
+                <div class="hours-container">
+                    <div class="hours-item hours-day">Mon-Fri</div>
+                    <div class="hours-item hours-day">Sat</div>
+                    <div class="hours-item hours-day">Sun</div>
+                    <div class="hours-item hours-description">8am-5:30pm</div>
+                    <div class="hours-item hours-description">Closed</div>
+                    <div class="hours-item hours-description">Closed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="font-main g-container-v">
+            <div class="g-item-v g-top">Our Microsoft Building 6 Location</div>
+            <div class="g-item-v g-description">Located on Microsoft East Campus and open to Microsoft employees and guests.</div>
+            <div class="g-item-v g-title">Address</div>
+            <div class="g-item-v"><a href="https://maps.app.goo.gl/r4FevMqkgr2NzSQ38">15745 NE 36th Street, Redmond WA 98052</a></div>
+            <div class="g-item-v g-title">Phone</div>
+            <div class="g-item-v"><a href="tel:4254293292">425.429.3292</a></div>
+            <div class="g-item-v g-title">Store Hours</div>
+            <div class="g-item-v">
+                <div class="hours-container">
+                    <div class="hours-item hours-day">Mon-Fri</div>
+                    <div class="hours-item hours-day">Sat</div>
+                    <div class="hours-item hours-day">Sun</div>
+                    <div class="hours-item hours-description">7:30am-4pm</div>
+                    <div class="hours-item hours-description">Closed</div>
+                    <div class="hours-item hours-description">Closed</div>
+                </div>
+            </div>
+        </div>
 
 
 
